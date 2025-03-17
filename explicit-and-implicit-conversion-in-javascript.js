@@ -19,14 +19,18 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+// Explicitly converting string to number before performing arithmetic
+let result = Number("5") - 2;
 console.log("The result is: " + result);
 
-let isValid = Boolean("false");
+// Using explicit Boolean conversion for a string
+let isValid = Boolean("false");  // This will be true because non-empty strings are truthy
 if (isValid) {
     console.log("This is valid!");
 }
 
+// Explicitly converting the string to a number for arithmetic operations
 let age = "25";
-let totalAge = age + 5;
+let totalAge = Number(age) + 5;
 console.log("Total Age: " + totalAge);
+
